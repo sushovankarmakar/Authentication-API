@@ -88,4 +88,11 @@ public class AuthenticationController {
         System.out.println(username + "'s username or password is wrong.!!!");
         return (username + "'s username or password is wrong.!!!");
     }
+
+    @GetMapping("/admin")
+    public String admin(){
+        return ("<h1>You're an admin</h1>");
+    }
+
+
 }
